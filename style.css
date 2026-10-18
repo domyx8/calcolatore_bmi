@@ -1,0 +1,136 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.rigaForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.rigaForm label {
+    font-weight: bold;
+}
+
+.rigaForm input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.rigaForm input:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.risultato {
+    text-align: center;
+    border-top: 6px solid #64748b;
+}
+
+.bmi {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.categoria {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.sottopeso {
+    border-top-color: #3b82f6;
+}
+
+.normopeso {
+    border-top-color: #22c55e;
+}
+
+.sovrappeso {
+    border-top-color: #f59e0b;
+}
+
+.obesita {
+    border-top-color: #ef4444;
+}
+
+.link {
+    display: block;
+    width: fit-content;
+    margin: 25px auto 0;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
