@@ -1,48 +1,44 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
-    <style>
-        main{
-            padding-top: 0;
-            padding-bottom: 0;
-            padding-left: 60px;
-            padding-right: 60px;
-        }
-
-        .card{
-            background-color: white;
-            padding: 24px;
-            border-radius: 10px;
-        }
-    </style>
+    <title>Calcolo BMI</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <main>
-        <h1 class="title"></h1>
-        <div id="card">Nome</div>
-        <form>
-            <div class="rigaForm">
-                <label for=""></label>
-                <input type="text" name="nome ">
-            </div>
-             <div class="rigaForm">
-                <label for=""></label>
-                <input type="number" name="peso">
-            </div>
-             <div class="rigaForm">
-                <label for=""></label>
-                <input type="number" name="altezza">
-             <div class="rigaForm">
-                <input type="submit" name="nome">
-            </div>
-        </form>
-        
+        <h1 class="title">Calcolo BMI</h1>
+
+        <div id="card" class="card">
+            <h2>Inserisci i tuoi dati</h2>
+
+            <form action="bmi.php" method="POST">
+
+                <div class="rigaForm">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="rigaForm">
+                    <label for="peso">Peso (kg):</label>
+                    <input type="number" id="peso" name="peso"
+                           min="0.1" step="any" required>
+                </div>
+
+                <div class="rigaForm">
+                    <label for="altezza">Altezza (cm):</label>
+                    <input type="number" id="altezza" name="altezza"
+                           min="1" step="any" required>
+                </div>
+
+                <button type="submit">Calcola BMI</button>
+
+            </form>
+        </div>
     </main>
-    <p>hhh</p>
-    
-    
+
 </body>
 </html>
