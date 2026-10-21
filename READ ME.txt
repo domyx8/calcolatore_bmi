@@ -1,0 +1,12 @@
+READ ME
+Crea una pagina web contenente un titolo "Calcolatore BMI" e una card che permetta di inserire il nome, il peso (kg), l'altezza (cm) e un tasto calcola che porta in metodo POST ad un altra pagina bmi.php. 
+Il layout della prima pagina web, chiamata from.html, ha un layout da una singola colonna. tutto il contenuto è centrato verticalmente e orizzontalmente. il contenuto principale ha una  larghezza minima di 250 px. 
+colori: 
+Lo sfondo della pagina è di F1F3F5;
+Sfondo Card Bianco;
+Sfondo tasto "calcola 1F2328 larghezza piena, tasto bianco;
+Testo 1F2328;
+Nella card c'è un padding di 24px, la card ha angoli arrotondati di 12px, con un ombra leggera.
+Il pulsante ha angoli di 8px.
+All'interno della card i campi sono sviluppati nella seguente maniera:
+Label tutta larghezza, campo con Placeholder a tutta larghezza, messaggio di errore scon carattere lievemente piu piccolo di colore rosso, la distanza fra la label e la box è di 6px e tra la box e la label successiva è di 16px. Tra il tasta calcola e l'ultimo campo (altezza) è di 24px. Il font è tutt sans-serif
